@@ -1,0 +1,29 @@
+{
+  "files": {
+    "main.css": "/eyon-portfolio/static/css/main.e6805136.css",
+    "main.js": "/eyon-portfolio/static/js/main.1ee86e80.js",
+    "static/media/Admin.png": "/eyon-portfolio/static/media/Admin.a32823a9993858fed706.png",
+    "static/media/ReactLogo.png": "/eyon-portfolio/static/media/ReactLogo.da363b94e54e6deee792.png",
+    "static/media/ellaeun.png": "/eyon-portfolio/static/media/ellaeun.dc1f75072adda274f6cd.png",
+    "static/media/NodeJS.png": "/eyon-portfolio/static/media/NodeJS.e1d9233897fbe03fda7b.png",
+    "static/media/Login.png": "/eyon-portfolio/static/media/Login.95a04a1e7a118a09d2c5.png",
+    "static/media/Resume.pdf": "/eyon-portfolio/static/media/Resume.ef3a53e273f63b29dfc9.pdf",
+    "static/media/Python.png": "/eyon-portfolio/static/media/Python.d7a21d969a68b01c2b64.png",
+    "static/media/Registration.png": "/eyon-portfolio/static/media/Registration.a9ceca63e6c658bbf584.png",
+    "static/media/CSS.png": "/eyon-portfolio/static/media/CSS.19c8605d6b2861f5fbe0.png",
+    "static/media/MySQL.jpg": "/eyon-portfolio/static/media/MySQL.0803fcb19a86571f2c32.jpg",
+    "static/media/JavaSwing.png": "/eyon-portfolio/static/media/JavaSwing.fe1ae58cddd83b285227.png",
+    "static/media/JavaScript.png": "/eyon-portfolio/static/media/JavaScript.130c0ecd57833da6f75c.png",
+    "static/media/VisualStudioCode.png": "/eyon-portfolio/static/media/VisualStudioCode.bd1c681f6687b137f774.png",
+    "static/media/Tailwindcss.png": "/eyon-portfolio/static/media/Tailwindcss.95fe3ba98a6f11c2350a.png",
+    "static/media/Godot.png": "/eyon-portfolio/static/media/Godot.497b7e7adedd500bef0a.png",
+    "static/media/netbeans.png": "/eyon-portfolio/static/media/netbeans.ee8cf4762f533e53408e.png",
+    "index.html": "/eyon-portfolio/index.html",
+    "main.e6805136.css.map": "/eyon-portfolio/static/css/main.e6805136.css.map",
+    "main.1ee86e80.js.map": "/eyon-portfolio/static/js/main.1ee86e80.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6805136.css",
+    "static/js/main.1ee86e80.js"
+  ]
+}
