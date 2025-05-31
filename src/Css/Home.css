@@ -1,0 +1,215 @@
+/* Set page-wide defaults */
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  color: white;
+  font-family: 'Arial', sans-serif;
+  overflow-x: hidden;
+  height: 100%; 
+}
+
+/* Container for the whole page to use flexbox */
+.page-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-wrapper {
+  flex-grow: 1;
+}
+
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background-color: black;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+/* Home container, padding for navbar height */
+.home-container {
+  min-height: 50vh;
+  padding-top: 100px; /* space for fixed navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+/* Content Layout */
+.home-content {
+  max-width: 1180px;
+  width: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .home-content {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .home-text {
+    color: gray;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Miracles Autom", sans-serif;
+  }
+
+  .image-wrapper {
+    order: 2;
+  }
+}
+
+/* Text Section */
+.home-text {
+  max-width: 600px;
+  text-align: center;
+  flex: 1;
+}
+
+.title {
+  color: white;
+  font-size: 25px;
+  font-weight: bolder;
+  margin-bottom: 20px;
+  font-family: "Miracles Autom";
+}
+
+.highlight {
+  font-style: italic;
+  font-weight: bolder;
+  font-size: 50px;
+  color: #e96004;
+  font-family: "Miracles Autom";
+}
+
+.animated-text {
+  color: #ffc266;
+  font-size: 40px;
+  font-weight: bold;
+  font-family: "Miracles Autom";
+}
+
+.description {
+  color: gray;
+  font-weight: bold;
+  font-size: 24px;
+  align-items: center;
+  font-family: "Miracles Autom";
+}
+
+/* Glowing Image Section */
+.image-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  flex: 1;
+}
+
+.image-wrapper::before {
+  content: "";
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, #e90972, rgb(240, 134, 199), transparent);
+  border-radius: 50%;
+  filter: blur(35px);
+  animation: glow 4s ease-in-out infinite;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Image */
+.profile-image {
+  position: relative;
+  z-index: 1;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+/* Glow Animation */
+@keyframes glow {
+  0% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translate(-50%, -50%) scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 0.6;
+  }
+}
+
+/* View My Work Button Section */
+.cta-section {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.view-my-work-btn {
+  display: inline-block;
+  padding: 12px 30px;
+  font-size: 25px;
+  font-weight: bolder;
+  font-family: "Miracles Autom";
+  border-radius: 10px;
+  background: linear-gradient(90deg, orange, hotpink);
+  color: black;
+  cursor: pointer;
+  position: relative;
+  transition: background 0.3s ease;
+  user-select: none;
+}
+
+.view-my-work-btn:hover {
+  background: linear-gradient(90deg, #ff9966, #ff5e99);
+}
+
+.view-my-work-btn .tooltip {
+  display: none;
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 20px;
+  color: #ffccf9;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 6px 10px;
+  border-radius: 10px;
+  white-space: nowrap;
+}
+
+.view-my-work-btn:hover .tooltip {
+  display: block;
+}
+
+/* Footer Styles */
+.footer-container {
+  background-color: #222;
+  color: white;
+  padding: 12px 20px;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.7);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}

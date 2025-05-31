@@ -1,0 +1,102 @@
+/* navbar.css */
+
+.navbar {
+    background: #333;
+    padding: 1rem;
+    color: white;
+    position: relative;
+    font-family: "Miracles Autom";
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000; /* keep navbar on top */
+   
+  }
+  
+  .navbar-logo {
+    font-size: 50px;
+    font-weight: bolder;
+    font-family: "Miracles Autom";
+    background: linear-gradient(to right, orange, hotpink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  
+  /* Hamburger button */
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 1.8rem;
+    user-select: none;
+    color: white;
+  }
+  
+  /* Mobile menu hidden by default */
+  .mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: fixed; /* floating over page */
+    top: 60px; /* adjust based on navbar height */
+    left: 0;
+    right: 0;
+    background: #333;
+    padding: 1rem 0;
+    z-index: 999;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+  }
+  
+  /* Show mobile menu when open */
+  .mobile-menu.open {
+    display: flex;
+  }
+  
+  /* Mobile menu links */
+  .mobile-menu a {
+    color: white;
+    padding: 0.8rem 1.5rem;
+    text-decoration: none;
+    border-bottom: 1px solid #555;
+  }
+  
+  /* Desktop menu hidden by default */
+  .desktop-menu {
+    display: none;
+    align-items: center;
+  }
+  
+  /* Desktop menu links */
+  .desktop-menu a {
+    color: white;
+    margin-left: 2.5rem; /* spacing between links */
+    text-decoration: none;
+    font-weight:bolder;
+    font-size: 25px;
+    font-family: "Miracles Autom";
+    padding: 0.5rem 0;
+  }
+  
+  /* Hover effect for links */
+  .desktop-menu a:hover,
+  .mobile-menu a:hover {
+    color: #f06c00;
+  }
+  
+  /* Media query for screens wider than 768px */
+  @media (min-width: 768px) {
+    .hamburger {
+      display: none; /* hide hamburger on desktop */
+    }
+  
+    .mobile-menu {
+      display: none !important; /* hide mobile menu on desktop */
+    }
+  
+    .desktop-menu {
+            display: flex;
+            justify-content: center; /* push links to the right */
+            align-items: center;
+            width: 100%; /* take full width so justify-content works */
+          } /* show desktop menu */
+    }
+  
+  

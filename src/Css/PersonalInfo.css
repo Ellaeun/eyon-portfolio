@@ -1,0 +1,122 @@
+/* Main container */
+.infographic-container {
+    background: linear-gradient(to bottom right, #070707, #4b4545);
+    min-height: 100vh;
+    padding: 50px 20px;
+    font-family: 'Segoe UI', sans-serif;
+    color: #2e2727;
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 3.5rem;
+    margin-bottom: 50px;
+    color: #da5050;
+    font-weight: bolder;
+    font-family: "Miracles Autom";
+    
+  }
+  
+  /* Timeline wrapper */
+  .infographic-timeline {
+    position: relative;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  /* Vertical dotted line in the center */
+  .infographic-timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    border-left: 3px dotted #000;
+    transform: translateX(-50%);
+    z-index: 1;
+  }
+  
+  /* Timeline blocks */
+  .timeline-block {
+    position: relative;
+    width: 50%;
+    padding: 20px 40px;
+    box-sizing: border-box;
+  }
+  
+  .timeline-block.left {
+    left: 0;
+    text-align: right;
+  }
+  
+  .timeline-block.right {
+    left: 50%;
+    text-align: left;
+  }
+  
+  /* The black circle marker on the center line */
+  /* The black circle marker on the center line */
+.circle {
+    position: absolute;
+    top: 20px;
+    width: 40px; /* increased size */
+    height: 40px; /* increased size */
+    background-color: black;
+    border-radius: 50%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;           /* in case you want emoji or icon inside */
+    font-size: 20px;        /* adjust icon size */
+    font-weight: bold;
+  }
+  
+  
+  .timeline-block.left .circle {
+    right: -10px; /* Aligns the circle to the center dotted line */
+  }
+  
+  .timeline-block.right .circle {
+    left: -10px;
+  }
+  
+  /* Content box (stories) */
+  .content-box {
+    background-color: rgb(206, 202, 202);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 3px 10px rgba(243, 242, 242, 0.1);
+    position: relative;
+    z-index: 2;
+    font-family: "Miracles Autom";
+    font-weight: bold;
+  }
+  
+  .content-box h2 {
+    margin-top: 0;
+    color: #da5050;
+    font-family: "Miracles Autom";
+  }
+  
+  .back-to-top {
+    position: fixed;
+    bottom: 25px;
+    right: 25px;
+    background-color: #ff6f00;
+    color: white;
+    border: none;
+    padding: 12px 14px;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    transition: background-color 0.3s ease;
+    z-index: 1000;
+  }
+  
+  .back-to-top:hover {
+    background-color: #e65c00;
+  }
+  

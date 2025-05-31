@@ -1,0 +1,116 @@
+/* About Container */
+.about-container {
+    min-height: 100vh;
+    padding-top: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+  }
+  
+  /* Content Layout */
+  .about-content {
+    max-width: 1180px;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  
+  @media (min-width: 768px) {
+    .about-content {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+  
+    .about-text {
+      text-align: left;
+      flex: 1;
+    }
+  
+    .about-image-wrapper {
+      order: 2;
+    }
+  }
+  
+  /* Text Section */
+  .about-text {
+    max-width: 600px;
+    text-align: center;
+    flex: 1;
+  }
+  
+  .title {
+    font-size: 40px;
+    font-weight: bold;
+    font-family: "Miracles Autom", sans-serif;
+    background: linear-gradient(to right, orange, hotpink);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+  }
+  
+  .about-description {
+    color: gray;
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Miracles Autom", sans-serif;
+  }
+  
+  /* Glowing Image Section */
+  .about-image-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    flex: 1;
+  }
+  
+  .about-image-wrapper::before {
+    content: "";
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle, #e90972, rgb(240, 134, 199), transparent);
+    border-radius: 50%;
+    filter: blur(35px);
+    animation: glow 4s ease-in-out infinite;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  /* Image */
+  .about-profile-image {
+    position: relative;
+    z-index: 1;
+    width: 250px;
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+  
+  /* Glow Animation */
+  @keyframes glow {
+    0% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.6;
+    }
+    50% {
+      transform: translate(-50%, -50%) scale(1.1);
+      opacity: 1;
+    }
+    100% {
+      transform: translate(-50%, -50%) scale(1);
+      opacity: 0.6;
+    }
+  }
+ 
+  

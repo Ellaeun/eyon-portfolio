@@ -1,0 +1,37 @@
+.footer-container {
+    background-color: #222;
+    color: #fff;
+    padding: 12px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.7);
+    /* no fixed or absolute positioning */
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .social-icons a {
+    color: #fff;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+    display: flex;
+    align-items: center;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6f00;
+  }
+  
+  .footer-text {
+    font-size: 0.85rem;
+    opacity: 0.7;
+    white-space: nowrap;
+  }
+  
