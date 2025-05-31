@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/eyon-portfolio/static/css/main.754cac7e.css",
-    "main.js": "/eyon-portfolio/static/js/main.1ee86e80.js",
+    "main.css": "/eyon-portfolio/static/css/main.02d01d03.css",
+    "main.js": "/eyon-portfolio/static/js/main.0c28607a.js",
     "static/media/Admin.png": "/eyon-portfolio/static/media/Admin.a32823a9993858fed706.png",
     "static/media/ReactLogo.png": "/eyon-portfolio/static/media/ReactLogo.da363b94e54e6deee792.png",
     "static/media/ellaeun.png": "/eyon-portfolio/static/media/ellaeun.dc1f75072adda274f6cd.png",
@@ -19,11 +19,11 @@
     "static/media/Godot.png": "/eyon-portfolio/static/media/Godot.497b7e7adedd500bef0a.png",
     "static/media/netbeans.png": "/eyon-portfolio/static/media/netbeans.ee8cf4762f533e53408e.png",
     "index.html": "/eyon-portfolio/index.html",
-    "main.754cac7e.css.map": "/eyon-portfolio/static/css/main.754cac7e.css.map",
-    "main.1ee86e80.js.map": "/eyon-portfolio/static/js/main.1ee86e80.js.map"
+    "main.02d01d03.css.map": "/eyon-portfolio/static/css/main.02d01d03.css.map",
+    "main.0c28607a.js.map": "/eyon-portfolio/static/js/main.0c28607a.js.map"
   },
   "entrypoints": [
-    "static/css/main.754cac7e.css",
-    "static/js/main.1ee86e80.js"
+    "static/css/main.02d01d03.css",
+    "static/js/main.0c28607a.js"
   ]
 }
